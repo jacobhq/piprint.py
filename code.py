@@ -1,12 +1,24 @@
 from datetime import date
 import os
 
+# Get date
 date = date.today()
 date_str = str(date)
+
+# Vars to change
 itemsList = ["N/A", "Ford", "Volvo", "BMW"]
+priceList = [0.00, 100, 20, 300]
+fileName = "Output.txt"
+fileDir = "/home/pi/Documents/Code/py-piprint"
+file = fileDir + "/" + fileName
+print_command = "lp -o fit-to-page " + file
+
+# More Vars
+
+
+# Items list and length
 length = len(itemsList) - 1
 length_str = str(length)
-priceList = [0.00, 100, 20, 300]
 print(itemsList[1:4])
 print("Enter a product id between 1 and " + length_str + ":")
 selected_item = input()
@@ -15,7 +27,7 @@ price = str(priceList[selected_item_int])
 print("Printing")
 
 # Create file
-with open("output.txt",'w',encoding = 'utf-8') as f:
+with open(fileName,'w',encoding = 'utf-8') as f:
    f.write("Shopping\n")
    f.write("------------------\n")
    f.write("Item")
@@ -32,7 +44,6 @@ with open("output.txt",'w',encoding = 'utf-8') as f:
    f.close()
 
 # Print file
-print_command = "lp -o fit-to-page /home/pi/Documents/Code/py-piprint/output.txt"
 res = os.system(print_command)
 print("Complete")
-os.remove("/home/pi/Documents/Code/py-piprint/output.txt")
+os.remove(file)
