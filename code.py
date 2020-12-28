@@ -12,6 +12,7 @@ fileName = "Output.txt"
 fileDir = "/home/pi/Documents/Code/py-piprint"
 file = fileDir + "/" + fileName
 print_command = "lp -o fit-to-page " + file
+removeFile = true
 
 # More Vars
 
@@ -45,5 +46,6 @@ with open(fileName,'w',encoding = 'utf-8') as f:
 
 # Print file
 res = os.system(print_command)
+if removeFile:
+  os.remove(file)
 print("Complete")
-os.remove(file)
