@@ -15,7 +15,8 @@ print_command = "lp -o fit-to-page " + file
 removeFile = true
 
 # More Vars
-
+printingText = "Printing"
+titleText = "Shopping"
 
 # Items list and length
 length = len(itemsList) - 1
@@ -25,11 +26,11 @@ print("Enter a product id between 1 and " + length_str + ":")
 selected_item = input()
 selected_item_int = int(selected_item)
 price = str(priceList[selected_item_int])
-print("Printing")
+print(printingText)
 
 # Create file
 with open(fileName,'w',encoding = 'utf-8') as f:
-   f.write("Shopping\n")
+   f.write(titleText + "\n")
    f.write("------------------\n")
    f.write("Item")
    f.write("        ")
