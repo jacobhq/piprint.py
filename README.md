@@ -19,3 +19,5 @@ There are a selection of variables at the start of the file that allow for easy 
 | `fileDir`       | String       | The location of the file on your computer               | 4      |
 | `print_command` | String       | The command that the script will use to print your file | 5      |
 | `removeFile`    | Boolean      | Set to `false` if you want to keep the txt output file  | 6      |
+| `printingText`  | String       | Text logged to console when printing                    | 7      |
+| `titleText`     | String       | The title at the top of the receipt                     | 8      |
