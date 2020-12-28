@@ -38,7 +38,7 @@ if i == 3:
 
 
 # Print file
-# res = os.system(print_command)
+res = os.system(print_command)
 loader.load(printingText)
 if removeFile:
   os.remove(file)
