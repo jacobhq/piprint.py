@@ -6,7 +6,7 @@
 Piprint is a bunch of python designed to allow the [adafruit mini thermal printer](https://shop.pimoroni.com/products/mini-thermal-printer) to work like a receipt printer.
 
 ### Setup
-To have your printer ready for setup, make sure you have followed [this guide](https://learn.adafruit.com/networked-thermal-printer-using-cups-and-raspberry-pi/overview). You will definitely need to change variable `4`, and all the others can be left unless you wish to change them.
+To have your printer ready for setup, make sure you have followed [this guide](https://learn.adafruit.com/networked-thermal-printer-using-cups-and-raspberry-pi/overview). Now you have completed the previous guide, download code.py from [the latest release](https://github.com/jacobhq/piprint.py/releases/), and then get to work changing the variables. You will definitely need to change variable `4`, and all the others can be left unless you wish to change them.
 
 ### How does it work?
 The script will ask some questions, and then create a file to be printed. It will then use `os.system` to run the print command, which can be set from a handy variable, before removing the file.
