@@ -23,3 +23,6 @@ There are a selection of variables at the start of the file that allow for easy 
 | `removeFile`    | Boolean      | Set to `false` if you want to keep the txt output file  | 6      |
 | `printingText`  | String       | Text logged to console when printing                    | 7      |
 | `titleText`     | String       | The title at the top of the receipt                     | 8      |
+
+### Copyright
+Feel free to edit, remix, and use to your heart's content, but please be a decent human, and don't whitelabel or use without stating the source. If you have questions, drop me a line at [info@desica.uk](mailto:info@desica.uk)
