@@ -1,5 +1,7 @@
 # piprint.py
 
+> **Be warned** this script works only on linux; I may add windows support in the future...
+
 ### What is it?
 Piprint is a bunch of python designed to allow the [adafruit mini thermal printer](https://shop.pimoroni.com/products/mini-thermal-printer) to work like a receipt printer.
 
